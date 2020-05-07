@@ -12,6 +12,7 @@ resetButton.addEventListener("click", function () {
     console.log("reset button clicked");
     let refresh = Number(reset.innerHTML) + 1;
     reset.innerHTML = refresh;
+    
 })
 
 teamoneshootButton.addEventListener("click", function () {
@@ -36,5 +37,10 @@ if (d < 0.5){
     teamtwonumgoals.innerHTML = madeshots;
 }
 })
-
+resetButton.addEventListener("click" , function(){
+    teamonenumgoals.innerHTML = 0;
+    teamonenumshots.innerHTML = 0;
+    teamtwonumgoals.innerHTML = 0;
+    teamtwonumshots.innerHTML = 0;
+})
 
